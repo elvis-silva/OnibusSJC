@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "158159229594",
+    "firebase_url": "https://onibussjc.firebaseio.com",
+    "project_id": "onibussjc",
+    "storage_bucket": "onibussjc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158159229594:android:2e93dda3313af91f",
+        "android_client_info": {
+          "package_name": "com.nigapps.onibus.sjc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158159229594-e11shc2us5voa8dniio3btggdefre80p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nigapps.onibus.sjc",
+            "certificate_hash": "d4dada3afeb994bd0643628e97da1608cf1cf9ab"
+          }
+        },
+        {
+          "client_id": "158159229594-f2kqtpr468501vui4biusf8587uk630a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nigapps.onibus.sjc",
+            "certificate_hash": "7f566a4a93ce0eba5d01c3184909d4cb53008ca8"
+          }
+        },
+        {
+          "client_id": "158159229594-h95ev0904kbi8rnfg5j3t2stm9rbigok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqvQBijRGPwEKGpdbBEwGtUKnLgyEEOgY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158159229594-h95ev0904kbi8rnfg5j3t2stm9rbigok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

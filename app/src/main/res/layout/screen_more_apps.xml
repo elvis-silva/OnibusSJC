@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/scroll_view"
+    android:id="@+id/scroll_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/container_choose"
+        android:contentDescription="@string/linear_layout_container">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/native_ad_container_view"/>
+
+        <!--com.google.android.gms.ads.formats.NativeContentAdView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E3E3E3"
+            android:minHeight="50dp"
+            android:visibility="invisible"
+            android:id="@+id/native_ad_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contentad_advertisement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/advertisement"
+                    android:textColor="#BBBBBB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:paddingRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/contentad_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:paddingBottom="5dp" />
+
+                        <TextView
+                            android:id="@+id/contentad_call_to_action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#0000FF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/contentad_headline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:textColor="#0000FF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/contentad_body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="3dp"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/contentad_advertiser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/contentad_logo"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="3dp"
+                                android:gravity="bottom" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.gms.ads.formats.NativeContentAdView-->
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.elvis.biblia.msg"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_biblia"
+                android:contentDescription="Mensagens da Bíblia"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mensagens Sagradas"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Receba mensagens da Bíblia Sagrada todos os dias."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.lohanamahala.oracoes.salmos.two"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_salmos"
+                android:contentDescription="Orações e Salmos"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orações e Salmos"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orações católicas e Salmos pra te acompanhar."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.nigapps.game.aircraftmania.master"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_aircraft"
+                android:contentDescription="Aircraft Mania"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aircraft Mania"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Conhece Flappy Bird? Este game é mais desafiador. Aceita o desafio?"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.kbdrops.beplus"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_beplus"
+                android:contentDescription="Be+"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Be+"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Compartilhe positividade nas suas redes sociais."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.nigapps.pis"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_meu_pis"
+                android:contentDescription="Meu PIS"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meu PIS"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calendário do PIS e tudo o que você precisa saber pra sacar o seu."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.elvis.fgtscorrigido.app"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_fgts_corrigido"
+                android:contentDescription="FGTS Corrigido"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FGTS Corrigido"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faça o cálculo e descubra quanto você pode ganhar com a correção do FGTS."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.nigapps.fgts.lucro"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_fgts_meu_lucro"
+                android:contentDescription="FGTS Meu Lucro"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FGTS Meu Lucro"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calcule o lucro anual do seu FGTS."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.nowitgoesapps.fgts.inativo"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_fgts_inativo"
+                android:contentDescription="FGTS Inativo Como Sacar"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FGTS Inativo Como Sacar"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Principais notícias dos seus direitos trabalhistas diariamente."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.elvis.shopping.list"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_listadecompras"
+                android:contentDescription="Lista de Compras"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lista de Compras"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tenha uma lista de compras com despensa sempre a mãos"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.elvis.financeirando"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_finances"
+                android:contentDescription="Financeirando"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Financeirando"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Organize suas finanças de forma simples e objetiva."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="128dp"
+            android:background="@color/ad_bg_color"
+            android:orientation="horizontal"
+            android:contentDescription="com.elvis.wallpaper.polygon"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="3dp"
+            android:onClick="openPlayStore">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_wp_polygon"
+                android:contentDescription="Wallpaper Polygon"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallpaper Polygon"
+                    android:textSize="16sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/ad_font_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Papéis de parede polígonos para seu smartphone."
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/ad_font_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/native_ad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="320x300"
+            ads:adUnitId="ca-app-pub-4768510961285493/5067306385">
+        </com.google.android.gms.ads.NativeExpressAdView-->
+    </LinearLayout>
+</ScrollView>

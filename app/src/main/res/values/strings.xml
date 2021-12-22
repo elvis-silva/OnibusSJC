@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Onibus - SJC</string>
+    <string name="title_main_screen">Linhas</string>
+    <string name="title_news_screen">Notícias</string>
+    <string name="title_more_apps_screen">Apps</string>
+    <string name="ver_linhas_de_onibus">Ver as linhas de ônibus</string>
+    <string name="scroll_view">Scroll View Container</string>
+    <string name="linear_layout_container">Linear Layout Container</string>
+    <string name="admob_app_id">ca-app-pub-4768510961285493~8199894508</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4768510961285493/4797929444</string>
+    <string name="instersticial_ad_unit_id">ca-app-pub-4768510961285493/2938052866</string>
+    <string name="native_l_009_ad_unit_id">ca-app-pub-4768510961285493/9576013177</string>
+    <string name="native_m003_ad_unit_id">ca-app-pub-4768510961285493/3237835533</string>
+    <string name="native_bus_sjc_unit_id">ca-app-pub-4768510961285493/5067306385</string>
+    <string name="img_desc">Img desc</string>
+    <string name="icon_credit_by">Icon made by flaticon from www.flaticon.com</string>
+    <string name="appinstall_imagedescription">App install desc</string>
+    <string name="advertisement">Publicidade</string>
+    <string name="linhas_de_bus">Linhas de ônibus</string>
+    <string name="todo">TODO</string>
+    <string name="native_express_320x300_id">ca-app-pub-4768510961285493/9576013177</string>
+    <string name="native_advanced_test_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="title_more">Mais</string>
+    <string name="icon_text">ICON</string>
+    <string name="source_title">Fonte:\ </string>
+    <string name="title_news">Notícias</string>
+    <string name="connection_required_message">VOCÊ PRECISA ESTAR CONECTADO A INTERNET PARA VER AS NOTÍCIAS.</string>
+</resources>

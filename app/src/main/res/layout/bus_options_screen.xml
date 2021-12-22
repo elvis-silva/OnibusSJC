@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/adViewBusOptions"
+        android:layout_marginBottom="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btn_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/linhas_de_bus"
+                android:textSize="20sp"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/aviso_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--GridView
+            android:id="@+id/bus_options_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:contentDescription="BUS OPTIONS SCREEN"/-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_bus" />
+        <!--com.lucasurbas.listitemview.ListItemView
+            android:id="@+id/list_item_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liv_title="@strnumDaLinhaitle"
+            app:liv_subtitle="@strnomeDaLinhaitle"
+            app:liv_icon="@drawable/ic_call_24dp"
+            app:liv_menu="@menu/single_action_menu"
+            app:liv_multiline="false"
+            app:liv_displayMode="icon"/-->
+    </LinearLayout>
+
+    <!--com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBusOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView-->
+</RelativeLayout>
